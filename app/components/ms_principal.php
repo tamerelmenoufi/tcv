@@ -232,14 +232,14 @@
                 <div class="row">
                     <div class="col">
                         <!-- <div class="card-body"> -->
-                            <h6 class="card-title" style="color:#054f8c;">
-                                <?=$d->training_name?><br>
+                            <h6 class="card-title p-2" style="color:#054f8c;">
+                                <?=$d->training_name?>
                                 <!-- <small style="color:#a1a1a1"><?=$d->company_name?></small> -->
                             </h6>
                         <!-- </div> -->
                     </div>
                 </div>
-                <div class="row g-0">
+                <div class="row">
                     <div class="col-2">
                     <img src="img/<?=$i?>.png" class="img-fluid rounded-start w-100">
                     </div>
@@ -249,7 +249,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="row g-0">
+                <div class="row">
                     <div class="col">
                         <p class="d-flex justify-content-between card-text p-2" style="color:#a1a1a1; font-size:12px;">
                             <small class="text-body-secondary"><i class="fa fa-calendar"></i> <?=dataBr($d->initial_date)?> - <?=dataBr($d->final_date)?></small>
