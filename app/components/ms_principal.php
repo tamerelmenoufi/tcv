@@ -239,7 +239,7 @@
                         <!-- </div> -->
                     </div>
                 </div>
-                <div class="row">
+                <div class="row g-0">
                     <div class="col-2">
                     <img src="img/<?=$i?>.png" class="img-fluid rounded-start w-100">
                     </div>
@@ -249,7 +249,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row g-0">
                     <div class="col">
                         <p class="d-flex justify-content-between card-text p-2" style="color:#a1a1a1; font-size:12px;">
                             <small class="text-body-secondary"><i class="fa fa-calendar"></i> <?=dataBr($d->initial_date)?> - <?=dataBr($d->final_date)?></small>
