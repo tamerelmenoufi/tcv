@@ -188,7 +188,7 @@
                 <div class="col-3 d-flex flex-column justify-content-center align-items-center" style="color:#fff; background-color:#00a8ec; height:100%; background-image:url(img/banner_bg_company.png); background-size:contain; background-repeat:no-repeat;">
                     <h6 style="font-size:30px;">12</h6>
                     <span style="font-size:10px;">Treinamentos</span>
-                    <div style="width:60%">
+                    <div style="width:60%">teste
                         <div style="width:33%; height:10%; background-color:#e88016; float:left;"></div>
                         <div style="width:33%; height:45%; background-color:#76b42d; float:left;"></div>
                         <div style="width:33%; height:80%; background-color:#2886c7; float:left;"></div>
