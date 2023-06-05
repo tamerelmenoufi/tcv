@@ -146,7 +146,7 @@
 
     .card-text-add {
         display: -webkit-box;
-        -webkit-line-clamp: 2;
+        -webkit-line-clamp: 4;
         overflow: hidden;
         -webkit-box-orient: vertical;
     }
