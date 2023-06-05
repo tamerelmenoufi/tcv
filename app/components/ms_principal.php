@@ -174,7 +174,7 @@
                         $i++;
             ?>
             <div
-                class="row"
+                class="d-flex justify-content-between align-items-end"
                 style="height:150px;"
             >
                 <div class="col d-flex flex-column justify-content-center align-items-center p-4" style="color:#fff; background-color:#30407f; height:100%; background-image:url(img/banner_bg_training.png); background-size:contain">
