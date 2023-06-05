@@ -232,7 +232,7 @@
                 <div class="row g-0">
                     <div class="col">
                         <!-- <div class="card-body"> -->
-                            <h6 class="card-title p-2">
+                            <h6 class="card-title p-2" style="color:#054f8c;">
                                 <?=$d->training_name?><br>
                                 <small style="color:#a1a1a1"><?=$d->company_name?></small>
                             </h6>
