@@ -144,11 +144,14 @@
         height:155px;
     }
 
-    .card-text-add {
+    .card-body {
+        padding:1px;
+        margin:0;
         display: -webkit-box;
         -webkit-line-clamp: 4;
         overflow: hidden;
         -webkit-box-orient: vertical;
+        font-size:11px;
     }
     .card-background{
         background-image:url('img/background_card.png?k');
@@ -244,7 +247,7 @@
                     <img src="img/<?=$i?>.png" class="img-fluid rounded-start w-100">
                     </div>
                     <div class="col-10" style="border:solid 1px red">
-                    <div class="card-body" style="margin:0; padding:0">
+                    <div class="card-body">
                         <b><?=$d->company_name?></b><br><?=$d->training_description?>
                     </div>
                     </div>
