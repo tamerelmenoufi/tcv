@@ -234,7 +234,7 @@
                         <!-- <div class="card-body"> -->
                             <h6 class="card-title p-2" style="color:#054f8c;">
                                 <?=$d->training_name?><br>
-                                <small style="color:#a1a1a1"><?=$d->company_name?></small>
+                                <!-- <small style="color:#a1a1a1"><?=$d->company_name?></small> -->
                             </h6>
                         <!-- </div> -->
 
@@ -246,6 +246,7 @@
                     </div>
                     <div class="col-10">
                     <div class="card-body">
+                        <b><?=$d->company_name?></b>
                         <p class="card-text-add"><?=$d->training_description?></p>
                     </div>
                     </div>
