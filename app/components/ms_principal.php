@@ -178,7 +178,7 @@
             >
                 <div class="d-flex justify-content-center align-items-center p-4" style="color:#127f26; background-image:url(img/banner_bg_training.png); background-size:100% 100%;">
                     <i class="fa-solid fa-users-gear" style="font-size:25px"></i>
-                    <h6 style="font-size:15px;"> 45</h6>
+                    <h6 style="font-size:15px;"> 40</h6>
                 </div>
                 <div class="d-flex justify-content-center flex-column align-items-center">
                     <h6 style="text-align:center; color:#075595;"><?=$d->name?></h6>
