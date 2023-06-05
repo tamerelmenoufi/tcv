@@ -141,7 +141,7 @@
         'approved' => 'approved',
         'denied' => 'denied',
         'Exit' => 'Exit',
-        'Trained' => 'Trained',
+        'Trained Opportunity' => 'Trained Opportunity',
         '' => '',
         '' => '',
         '' => '',
