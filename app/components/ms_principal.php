@@ -186,7 +186,7 @@
                     <img src="img/<?=$i?>.png" style="height:40px;" />
                 </div>
                 <div class="col-3 d-flex flex-column justify-content-center align-items-center" style="color:#fff; background-color:#00a8ec; height:100%; background-image:url(img/banner_bg_company.png); background-size:contain; background-repeat:no-repeat;">
-                    <h6 style="font-size:30px;">12</h6>
+                    <b style="font-size:30px;">12</b>
                     <span style="font-size:10px;">Treinamentos</span>
                     <div style="width:60%; height:40px;">
                         <div style="width:33%; height:10%; background-color:#e88016; float:left;"></div>
