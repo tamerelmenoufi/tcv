@@ -235,7 +235,7 @@
                 <div class="row">
                     <div class="col">
                         <!-- <div class="card-body"> -->
-                            <h6 class="card-title p-1" style="color:#054f8c;">
+                            <h6 class="card-title" style="color:#054f8c; padding:1px; margin:0;">
                                 <?=$d->training_name?>
                                 <!-- <small style="color:#a1a1a1"><?=$d->company_name?></small> -->
                             </h6>
