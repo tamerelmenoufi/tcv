@@ -260,7 +260,7 @@
                                 <i class="fa fa-users"></i> 122 Vagas
                             </small>
                             <span>
-                                <span class="bg-success p-1 text-dark bg-opacity-25">
+                                <span class="bg-success p-1 text-dark bg-opacity-25 rounded">
                                     <i class="fa fa-dolar"></i> LE 1000.00 Cost
                                 </span>
                             </span>
