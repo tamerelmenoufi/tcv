@@ -230,7 +230,7 @@
             ?>
 
             <div class="card card-background m-2 OpenTraining" id="<?=$d->id?>"
-                <?=(($d->sign_up)?'style="background-color:rgb(100,253,79, 0.1);"':false)?>
+                <?=(($d->sign_upXX)?'style="background-color:rgb(100,253,79, 0.1);"':false)?>
             >
                 <div class="row">
                     <div class="col">
