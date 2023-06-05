@@ -229,15 +229,14 @@
             <div class="card card-background m-2 OpenTraining" id="<?=$d->id?>"
                 <?=(($d->sign_up)?'style="background-color:rgb(100,253,79, 0.1);"':false)?>
             >
-                <div class="row g-0">
+                <div class="row">
                     <div class="col">
                         <!-- <div class="card-body"> -->
-                            <h6 class="card-title p-2" style="color:#054f8c;">
+                            <h6 class="card-title" style="color:#054f8c;">
                                 <?=$d->training_name?><br>
                                 <!-- <small style="color:#a1a1a1"><?=$d->company_name?></small> -->
                             </h6>
                         <!-- </div> -->
-
                     </div>
                 </div>
                 <div class="row g-0">
