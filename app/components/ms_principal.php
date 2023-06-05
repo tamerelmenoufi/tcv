@@ -244,7 +244,7 @@
                     <img src="img/<?=$i?>.png" class="img-fluid rounded-start w-100">
                     </div>
                     <div class="col-10" style="border:solid 1px red">
-                    <div class="card-body">
+                    <div class="card-body" style="margin:0; padding:0">
                         <b><?=$d->company_name?></b><br><?=$d->training_description?>
                     </div>
                     </div>
