@@ -189,9 +189,9 @@
                     <b style="font-size:30px;">12</b>
                     <span style="font-size:10px;">Treinamentos</span>
                     <div style="width:60%; height:40px; position:relative;">
-                        <div style="position:absolute; bottom:0; width:33%; height:10%; background-color:#e88016; float:left;"></div>
-                        <div style="position:absolute; bottom:0; width:33%; height:45%; background-color:#76b42d; float:left;"></div>
-                        <div style="position:absolute; bottom:0; width:33%; height:80%; background-color:#2886c7; float:left;"></div>
+                        <div style="position:absolute; bottom:0; left:0; width:33%; height:10%; background-color:#e88016; float:left;"></div>
+                        <div style="position:absolute; bottom:0; left:33%; width:33%; height:45%; background-color:#76b42d; float:left;"></div>
+                        <div style="position:absolute; bottom:0; left:66%; width:33%; height:80%; background-color:#2886c7; float:left;"></div>
                     </div>
                 </div>
             </div>
