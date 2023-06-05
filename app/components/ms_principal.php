@@ -257,7 +257,7 @@
                         <p class="d-flex justify-content-between card-text p-2" style="color:#054f8c; font-size:12px;">
                             <small class="text-body-secondary">
                                 <i class="fa fa-calendar"></i> <?=dataBr($d->initial_date)?> - <?=dataBr($d->final_date)?><br>
-                                <i class="fa fa-users"></i> 122 <?=$Dic['Trained']?>
+                                <i class="fa fa-users"></i> 122 <?=$Dic['Trained Opportunity']?>
                             </small>
                             <span>
                                 <span class="bg-success p-1 text-dark bg-opacity-25 rounded">
