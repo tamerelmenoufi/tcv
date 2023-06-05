@@ -261,7 +261,7 @@
                             </small>
                             <span>
                                 <span class="bg-success p-1 text-dark bg-opacity-25 rounded">
-                                    <i class="fa fa-dolar"></i> LE 1000.00 Cost
+                                    <i class="fa-solid fa-sack-dollar"></i> <?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?>
                                 </span>
                             </span>
                         </p>
