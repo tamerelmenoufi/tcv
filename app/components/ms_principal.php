@@ -177,17 +177,17 @@
                 class="d-flex justify-content-between align-items-end"
                 style="height:150px;"
             >
-                <div class="d-flex justify-content-center align-items-center p-4" style="color:#fff; background-color:#30407f; height:100%; background-image:url(img/banner_bg_training.png); background-size:contain">
-                    <i class="fa-solid fa-users-gear" style="font-size:25px"></i>
-                    <h6 style="font-size:15px;"> 45</h6>
+                <div class="d-flex flex-column justify-content-center align-items-center p-4" style="color:#fff; background-color:#30407f; height:100%; background-image:url(img/banner_bg_training.png); background-size:contain">
+                    <h6 style="font-size:30px;"> 45</h6>
+                    <span>Alunos</span>
                 </div>
                 <div class="d-flex justify-content-center flex-column align-items-center">
                     <h6 style="text-align:center; color:#075595;"><?=$d->name?></h6>
                     <img src="img/<?=$i?>.png" style="height:40px;" />
                 </div>
-                <div class="d-flex justify-content-center align-items-center p-4" style="color:#fff; background-color:#00a8ec; height:100%; background-image:url(img/banner_bg_company.png); background-size:contain">
-                    <i class="fa-solid fa-file-circle-plus" style="font-size:25px;"></i>
-                    <h6 style="font-size:15px;"> 12</h6>
+                <div class="d-flex flex-column justify-content-center align-items-center p-4" style="color:#fff; background-color:#00a8ec; height:100%; background-image:url(img/banner_bg_company.png); background-size:contain">
+                    <h6 style="font-size:15px;">12</h6>
+                    <span>Treinamentos</span>
                 </div>
             </div>
             <?php
