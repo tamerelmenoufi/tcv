@@ -240,10 +240,10 @@
                     </div>
                 </div>
                 <div class="row g-0">
-                    <div class="col-2">
+                    <div class="col-2" style="border:solid 1px yellow">
                     <img src="img/<?=$i?>.png" class="img-fluid rounded-start w-100">
                     </div>
-                    <div class="col-10">
+                    <div class="col-10" style="border:solid 1px red">
                     <div class="card-body">
                         <p class="card-text-add"><b><?=$d->company_name?></b><br><?=$d->training_description?></p>
                     </div>
