@@ -245,7 +245,7 @@
                     </div>
                     <div class="col-10" style="border:solid 1px red">
                     <div class="card-body">
-                        <p class="card-text-add"><b><?=$d->company_name?></b><br><?=$d->training_description?></p>
+                        <b><?=$d->company_name?></b><br><?=$d->training_description?>
                     </div>
                     </div>
                 </div>
