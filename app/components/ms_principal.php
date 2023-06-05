@@ -177,7 +177,7 @@
                 class="d-flex justify-content-between align-items-end"
                 style="height:150px;"
             >
-                <div class="col d-flex flex-column justify-content-center align-items-center p-4" style="color:#fff; background-color:#30407f; height:100%; background-image:url(img/banner_bg_training.png); background-size:contain">
+                <div class="col d-flex flex-column justify-content-center align-items-center" style="color:#fff; background-color:#30407f; height:100%; background-image:url(img/banner_bg_training.png); background-size:contain">
                     <h6 style="font-size:30px;"> 45</h6>
                     <span style="font-size:10px;">Alunos</span>
                 </div>
@@ -185,7 +185,7 @@
                     <h6 style="text-align:center; color:#075595;"><?=$d->name?></h6>
                     <img src="img/<?=$i?>.png" style="height:40px;" />
                 </div>
-                <div class="col d-flex flex-column justify-content-center align-items-center p-4" style="color:#fff; background-color:#00a8ec; height:100%; background-image:url(img/banner_bg_company.png); background-size:contain">
+                <div class="col d-flex flex-column justify-content-center align-items-center" style="color:#fff; background-color:#00a8ec; height:100%; background-image:url(img/banner_bg_company.png); background-size:contain">
                     <h6 style="font-size:30px;">12</h6>
                     <span style="font-size:10px;">Treinamentos</span>
                 </div>
