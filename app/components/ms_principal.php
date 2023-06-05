@@ -178,7 +178,7 @@
                 style="height:150px;"
             >
                 <div class="col-3 d-flex flex-column justify-content-center align-items-center" style="color:#fff; background-color:#30407f; height:100%; background-image:url(img/banner_bg_training.png); background-size:contain; background-repeat:no-repeat;">
-                    <h6 style="font-size:30px;"> 45</h6>
+                    <b style="font-size:30px;"> 45</b>
                     <span style="font-size:10px;">Alunos</span>
                     <div style="width:60%; height:40px; position:relative;">
                         <div style="position:absolute; bottom:0; left:0; width:33%; height:10%; background-color:#e88016; float:left;"></div>
