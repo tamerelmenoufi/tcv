@@ -259,7 +259,7 @@
                                 <i class="fa fa-calendar"></i> <?=dataBr($d->initial_date)?> - <?=dataBr($d->final_date)?><br>
                                 <i class="fa fa-users"></i> 122 Vagas
                             </small>
-                            <span class="bg-success p-1 text-dark bg-opacity-10">
+                            <span class="bg-success p-1 text-dark bg-opacity-25">
                                 <i class="fa fa-dolar"></i> LE 1000.00 Cost
                             </span>
                         </p>
