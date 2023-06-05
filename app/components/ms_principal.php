@@ -137,9 +137,10 @@
         color: rgb(75, 192, 192, 1);
     }
     .BannersCompany{
-        background:url('img/company_background.png?xy');
+        /* background:url('img/company_background.png?xy');
         background-size:100%;
-        background-repeat:no-repeat;
+        background-repeat:no-repeat; */
+        background-color:#fff;
         height:155px;
     }
 
