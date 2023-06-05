@@ -141,7 +141,7 @@
         'approved' => 'موافقة',
         'denied' => 'رفض',
         'Exit' => 'مخرج',
-        'Trained Opportunity' => 'فرص متدربين',
+        'Trained Opportunity' => 'فرص للمتدربين',
         '' => '',
         '' => '',
         '' => '',
