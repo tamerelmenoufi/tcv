@@ -176,7 +176,7 @@
                 class="d-flex justify-content-between align-items-end"
                 style="height:150px;"
             >
-                <div class="d-flex justify-content-center align-items-center p-4" style="color:#127f26; height:100%; background-image:url(img/banner_bg_training.png); background-size:100% 100%;">
+                <div class="d-flex justify-content-center align-items-center p-4" style="color:#30407f; height:100%; background-image:url(img/banner_bg_training.png); background-size:contain">
                     <i class="fa-solid fa-users-gear" style="font-size:25px"></i>
                     <h6 style="font-size:15px;"> 45</h6>
                 </div>
