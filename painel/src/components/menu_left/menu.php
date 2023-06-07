@@ -25,7 +25,7 @@
 
     <div class="row mb-1 menu-cinza">
       <div class="col">
-        <a href="<?=(($_SESSION['lng'] == 'ar')?"?lng=en":"?lng=ar")?>" class="text-decoration-none texto-cinza" data-bs-dismiss="offcanvas" aria-label="Close">
+        <a href="<?=(($_SESSION['lng'] == 'ar')?"?lng=en":"?lng=ar")?>" class="text-decoration-none texto-cinza">
           <i class="fa-solid fa-language"></i> <?=(($_SESSION['lng'] == 'ar')?'English':'عربي')?>
         </a>
       </div>
