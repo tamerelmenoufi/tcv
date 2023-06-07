@@ -26,13 +26,11 @@
 
         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
           <li class="nav-item">
+            <?=(($_SESSION['lng'] == 'ar')?'<a href="./?lng=en">عربي</a>':'<a href="./?lng=ar">English</a>')?>
           </li>
         </ul>
 
         <ul class="navbar-nav">
-            <li class="nav-item">
-              Teste
-            </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <?=$_SESSION['ProjectPainel']->name?> <i class="fa-solid fa-user"></i>
