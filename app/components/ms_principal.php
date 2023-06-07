@@ -232,7 +232,7 @@
             <div class="card card-background m-2 OpenTraining" id="<?=$d->id?>"
                 <?=(($d->sign_upXX)?'style="background-color:rgb(100,253,79, 0.1);"':false)?>
             >
-                <div class="row">
+                <div class="row g-0">
                     <div class="col">
                         <!-- <div class="card-body"> -->
                             <h6 class="card-title" style="color:#054f8c; padding:2px; margin:0;">
