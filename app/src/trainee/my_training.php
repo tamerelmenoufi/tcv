@@ -33,13 +33,18 @@
 <div class="card m-2 card-background OpenTraining" style="background">
     <div class="row g-0">
         <div class="col">
-            <!-- <div class="card-body"> -->
+            <!-- <div class="card-body">
                 <h6 class="card-title p-2">
                     <?=$d->training_name?><br>
                     <small style="color:#a1a1a1"><?=$d->company_name?></small>
                 </h6>
-            <!-- </div> -->
-
+            </div> -->
+            <div class="card-body">
+                <h6 class="card-title" style="color:#054f8c; padding:2px; margin:0;">
+                    <?=$d->training_name?>
+                    <!-- <br><small style="color:#a1a1a1"><?=$d->company_name?></small> -->
+                </h6>
+            </div>
         </div>
     </div>
     <div class="row g-0">
@@ -48,13 +53,29 @@
         </div>
         <div class="col-10">
         <div class="card-body">
-            <p class="card-text">
+
+            <b><?=$d->company_name?></b>
+            <div class="d-flex justify-content-between card-text p-2" style="color:#054f8c; font-size:12px;">
+                <small class="w-100">
+                    <div class="w-100">
+                        <i class="fa fa-calendar"></i> <?=$Dic['Date']?>: <?=dataBr($d->initial_date)?> - <?=dataBr($d->final_date)?><br>
+                        <i class="fa fa-users"></i> <?=$d->trainings?> <?=$Dic['Trained Opportunity']?>
+                    </div>
+                    <div class="w-100" style="text-align:right; padding-right:5px;">
+                        <span class="bg-success p-1 text-dark bg-opacity-25 rounded">
+                            <i class="fa-solid fa-sack-dollar"></i> <?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?>
+                        </span>
+                    </div>
+                </small>
+            </div>
+
+            <!-- <p class="card-text">
                 <button class="btn btn-danger d-flex justify-content-between w-100" style="font-size:12px;">
                     <i class="fa-solid fa-sack-dollar"></i>
                     <span><?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?></span>
                     <span><i class="fa-solid fa-user-xmark"></i></span>
                 </button>
-            </p>
+            </p> -->
         </div>
         </div>
     </div>
