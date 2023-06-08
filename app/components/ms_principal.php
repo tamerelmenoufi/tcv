@@ -252,16 +252,16 @@
                 </div>
                 <div class="row g-0">
                     <div class="col">
-                        <p class="d-flex justify-content-between card-text p-2" style="color:#054f8c; font-size:12px;">
-                            <small class="text-body-secondary w-100">
+                        <p class="d-flex justify-content-between card-text p-2">
+                            <div class="text-body-secondary w-100" style="color:#054f8c; font-size:12px;">
                                 <i class="fa fa-calendar"></i> <?=$Dic['Date']?>: <?=dataBr($d->initial_date)?> - <?=dataBr($d->final_date)?><br>
                                 <i class="fa fa-users"></i> <?=$d->trainings?> <?=$Dic['Trained Opportunity']?>
-                            </small>
-                            <span class="w-100">
+                            </div>
+                            <div class="w-100" style="color:#054f8c; font-size:12px;">
                                 <span class="bg-success p-1 text-dark bg-opacity-25 rounded">
                                     <i class="fa-solid fa-sack-dollar"></i> <?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?>
                                 </span>
-                    </span>
+                            </div>
 
                             <!-- <div class="w-100">
                                 <small class="text-body-secondary w-100">
