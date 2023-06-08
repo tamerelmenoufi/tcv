@@ -67,7 +67,7 @@
                         <i class="fa fa-users"></i> <?=$d->trainings?> <?=$Dic['Trained Opportunity']?>
                     </div>
                     <div class="w-100" style="text-align:right; padding-right:5px; margin-top:5px;">
-                        <span class="bg-success p-1 text-dark bg-opacity-25 rounded">
+                        <span class="bg-success p-1 text-dark bg-opacity-25 rounded mh-2">
                             <i class="fa-solid fa-sack-dollar"></i> <?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?>
                         </span>
                         <span class="text-bg-warning rounded p-1">
