@@ -262,7 +262,7 @@
                                 <span class="bg-success p-1 text-dark bg-opacity-25 rounded">
                                     <i class="fa-solid fa-sack-dollar"></i> <?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?>
                                 </span>
-                                <span class="text-bg-warning rounded p-1" style="margin-<?=(($_SESSION['lng'] == 'ar')?'left':'right')?>:5px;">
+                                <span class="text-bg-warning rounded p-1" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px;">
                                     <i class="fa-solid fa-face-flushed"></i>
                                     <?=$Dic[$d->status]?>
                                 </span>
