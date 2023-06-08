@@ -263,7 +263,7 @@
                                 </span>
                             </span> -->
 
-                            <small class="w-100">
+                            <small class="text-body-secondary w-100">
                                 <div class="w-100">
                                     <i class="fa fa-calendar"></i> <?=$Dic['Date']?>: <?=dataBr($d->initial_date)?> - <?=dataBr($d->final_date)?><br>
                                     <i class="fa fa-users"></i> <?=$d->trainings?> <?=$Dic['Trained Opportunity']?>
