@@ -252,7 +252,7 @@
                 </div>
                 <div class="row g-0">
                     <div class="col">
-                        <p class="d-flex justify-content-between card-text p-2" style="color:#054f8c; font-size:12px;">
+                        <p class="d-flex justify-content-between card-text p-2" style="color:#054f8c; font-size:10px;">
                             <!-- <small class="text-body-secondary">
                                 <i class="fa fa-calendar"></i> <?=$Dic['Date']?>: <?=dataBr($d->initial_date)?> - <?=dataBr($d->final_date)?><br>
                                 <i class="fa fa-users"></i> <?=$d->trainings?> <?=$Dic['Trained Opportunity']?>
