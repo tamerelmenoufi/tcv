@@ -263,17 +263,18 @@
                                 </span>
                             </span> -->
 
-                            <small class="text-body-secondary w-100">
-                                <div class="w-100">
+                            <div class="w-100">
+                                <small class="text-body-secondary w-100">
                                     <i class="fa fa-calendar"></i> <?=$Dic['Date']?>: <?=dataBr($d->initial_date)?> - <?=dataBr($d->final_date)?><br>
                                     <i class="fa fa-users"></i> <?=$d->trainings?> <?=$Dic['Trained Opportunity']?>
-                                </div>
-                                <div class="w-100" style="text-align:<?=(($_SESSION['lng'] == 'ar')?'left':'right')?>; padding-<?=(($_SESSION['lng'] == 'ar')?'left':'right')?>:5px; margin-top:5px;">
-                                    <span class="bg-success p-1 text-dark bg-opacity-25 rounded">
-                                        <i class="fa-solid fa-sack-dollar"></i> <?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?>
-                                    </span>
-                                </div>
-                            </small>
+                                </small>
+                            </div>
+                            <div class="w-100" style="text-align:<?=(($_SESSION['lng'] == 'ar')?'left':'right')?>; padding-<?=(($_SESSION['lng'] == 'ar')?'left':'right')?>:5px; margin-top:5px;">
+                                <span class="bg-success p-1 text-dark bg-opacity-25 rounded">
+                                    <i class="fa-solid fa-sack-dollar"></i> <?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?>
+                                </span>
+                            </div>
+
 
                         </p>
                     </div>
