@@ -144,7 +144,7 @@
         height:155px;
     }
 
-    .card-body {
+    .card-body-limit4 {
         padding:1px;
         margin:0;
         display: -webkit-box;
@@ -247,7 +247,7 @@
                     <img src="img/<?=$i?>.png" class="img-fluid rounded-start w-100">
                     </div>
                     <div class="col-10">
-                    <div class="card-body">
+                    <div class="card-body-limit4">
                         <b><?=$d->company_name?></b><br><?=$d->training_description?>
                     </div>
                     </div>
