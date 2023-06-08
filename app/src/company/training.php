@@ -63,8 +63,8 @@
             <p class="d-flex justify-content-between card-text p-2" style="color:#054f8c; font-size:12px;">
                 <small class="text-body-secondary">
                     <i class="fa fa-calendar"></i> <?=$Dic['Date']?>: <?=dataBr($d->initial_date)?> - <?=dataBr($d->final_date)?><br>
-                    <i class="fa fa-users"></i> <?=$d->trainings?> <?=$Dic['Trained Opportunity']?><br>
-                    <span class="bg-success p-1 text-dark bg-opacity-25 rounded" style="margin-top:5px;">
+                    <i class="fa fa-users"></i> <?=$d->trainings?> <?=$Dic['Trained Opportunity']?><br><br>
+                    <span class="bg-success p-1 text-dark bg-opacity-25 rounded">
                         <i class="fa-solid fa-sack-dollar"></i> <?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?>
                     </span>
                 </small>
