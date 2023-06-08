@@ -45,9 +45,9 @@
     <div class="row g-0">
         <div class="col">
             <!-- <div class="card-body"> -->
-                <h6 class="card-title p-2">
-                    <?=$d->training_name?><br>
-                    <small style="color:#a1a1a1"><?=$d->company_name?></small>
+                <h6 class="card-title" style="color:#054f8c; padding:2px; margin:0;">
+                    <?=$d->training_name?>
+                    <!-- <br><small style="color:#a1a1a1"><?=$d->company_name?></small> -->
                 </h6>
             <!-- </div> -->
 
@@ -59,7 +59,8 @@
         </div>
         <div class="col-10">
         <div class="card-body">
-            <p class="card-text">
+            <b><?=$d->company_name?></b><br><?=$d->training_description?>
+            <!-- <p class="card-text">
                 <?php
                 if($d->sign_up){
                 ?>
@@ -79,7 +80,7 @@
                 <?php
                 }
                 ?>
-            </p>
+            </p> -->
         </div>
         </div>
     </div>
