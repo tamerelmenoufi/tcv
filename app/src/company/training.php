@@ -64,7 +64,7 @@
                 <small class="text-body-secondary">
                     <div>
                         <i class="fa fa-calendar"></i> <?=$Dic['Date']?>: <?=dataBr($d->initial_date)?> - <?=dataBr($d->final_date)?><br>
-                        <i class="fa fa-users"></i> <?=$d->trainings?> <?=$Dic['Trained Opportunity']?><br>
+                        <i class="fa fa-users"></i> <?=$d->trainings?> <?=$Dic['Trained Opportunity']?>
                     </div>
                     <div style="text-align:right; padding-right:5px;">
                         <span class="bg-success p-1 text-dark bg-opacity-25 rounded">
