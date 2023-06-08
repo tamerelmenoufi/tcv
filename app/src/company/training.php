@@ -61,6 +61,7 @@
         <div class="card-body">
             <b><?=$d->company_name?></b><br><?=$d->training_description?>
             <!-- <p class="card-text">
+                OBS
                 <?php
                 if($d->sign_up){
                 ?>
