@@ -115,6 +115,29 @@
     </div>
     <div class="card-body">
         <p class="card-text p-2" style="text-align:justify"><?=$d->training_description?></p>
+
+            <p class="card-text">
+            <?php
+                if($d->sign_up){
+                ?>
+                <button class="btn btn-success d-flex justify-content-between w-100" style="font-size:12px;">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <span><?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?></span>
+                    <span><i class="fa-regular fa-thumbs-up"></i></span>
+                </button>
+                <?php
+                }else{
+                ?>
+                <button class="btn btn-primary d-flex justify-content-between w-100 sign_up" style="font-size:12px;">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <span><?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?></span>
+                    <span><i class="fa-solid fa-right-to-bracket"></i></span>
+                </button>
+                <?php
+                }
+                ?>
+            </p>
+
     </div>
 </div>
 
