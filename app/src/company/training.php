@@ -60,7 +60,7 @@
         <div class="col-10">
         <div class="card-body">
             <b><?=$d->company_name?></b>
-            <p class="d-flex justify-content-between card-text p-2" style="color:#054f8c; font-size:12px; border:solid 1px red">
+            <div class="d-flex justify-content-between card-text p-2" style="color:#054f8c; font-size:12px; border:solid 1px red">
                 <div>
                     <i class="fa fa-calendar"></i> <?=$Dic['Date']?>: <?=dataBr($d->initial_date)?> - <?=dataBr($d->final_date)?><br>
                     <i class="fa fa-users"></i> <?=$d->trainings?> <?=$Dic['Trained Opportunity']?>
@@ -70,7 +70,7 @@
                         <i class="fa-solid fa-sack-dollar"></i> <?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?>
                     </span>
                 </div>
-            </p>
+            </div>
             <!-- <p class="card-text">
                 <?php
                 if($d->sign_up){
