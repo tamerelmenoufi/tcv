@@ -218,6 +218,7 @@
                                      b.name as company_name,
                                      b.logo,
                                      (select id from treinee_admission where trainee = '{$_SESSION['AppUsuario']}' and training = a.training and treining_period = a.id and del != '1') as sign_up
+                                     (select status from treinee_admission where trainee = '{$_SESSION['AppUsuario']}' and training = a.training and treining_period = a.id and del != '1') as status
                             from treining_period a
                             left join company b on a.company = b.id
                             left join company_training c on a.training = c.id
