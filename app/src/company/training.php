@@ -37,6 +37,13 @@
     .Titulo<?=$md5?>{
         margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:60px;
     }
+
+    .card-body {
+        padding:1px;
+        margin:0;
+        font-size:11px;
+    }
+
 </style>
 <div style="position:fixed; z-index:10; left:0; top:0; height:60px; background:#d8f2fe; width:100%; padding:10px; padding-top:15px;">
     <h4 class="Titulo<?=$md5?>"><?=$Dic['Training details']?></h4>
