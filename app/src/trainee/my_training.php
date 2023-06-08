@@ -29,7 +29,13 @@
     while($d = mysqli_fetch_object($result)){
         $i++;
 ?>
-
+<style>
+    .card-body {
+        padding:1px;
+        margin:0;
+        font-size:11px;
+    }
+</style>
 <div class="card m-2 card-background OpenTraining" style="background">
     <div class="row g-0">
         <div class="col">
@@ -53,7 +59,6 @@
         </div>
         <div class="col-10">
         <div class="card-body">
-
             <b><?=$d->company_name?></b>
             <div class="d-flex justify-content-between card-text p-2" style="color:#054f8c; font-size:12px;">
                 <small class="w-100">
