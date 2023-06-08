@@ -61,7 +61,7 @@
         <div class="card-body">
             <b><?=$d->company_name?></b>
             <div class="d-flex justify-content-between card-text p-2" style="color:#054f8c; font-size:12px; border:solid 1px red">
-                <small>
+                <small class="w-100">
                     <div class="w-100">
                         <i class="fa fa-calendar"></i> <?=$Dic['Date']?>: <?=dataBr($d->initial_date)?> - <?=dataBr($d->final_date)?><br>
                         <i class="fa fa-users"></i> <?=$d->trainings?> <?=$Dic['Trained Opportunity']?>
