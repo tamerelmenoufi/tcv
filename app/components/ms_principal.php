@@ -252,7 +252,7 @@
                 </div>
                 <div class="row g-0">
                     <div class="col">
-                        <p class="d-flex justify-content-between card-text p-2">
+
                             <div class="text-body-secondary w-100" style="color:#054f8c; font-size:12px;">
                                 <i class="fa fa-calendar"></i> <?=$Dic['Date']?>: <?=dataBr($d->initial_date)?> - <?=dataBr($d->final_date)?><br>
                                 <i class="fa fa-users"></i> <?=$d->trainings?> <?=$Dic['Trained Opportunity']?>
@@ -275,8 +275,6 @@
                                 </span>
                             </div> -->
 
-
-                        </p>
                     </div>
                 </div>
             </div>
