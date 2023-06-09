@@ -43,6 +43,32 @@
 </div>
 
 
+<div class="row g-0">
+    <div class="col-md-6">
+        <table style="border:0; padding:0; margin:0; width:100%;" border="0">
+        <?php
+            $query = "select count(*) as qt, b.name as company_name, (select count(*) from company_training) as total from company_training a left join company b on a.company = b.id group by a.company order by qt desc";
+            $result = mysqli_query($con, $query);
+            while($d = mysqli_fetch_object($result)){
+        ?>
+        <tr>
+            <td><?=$d->company_name?></td>
+            <td>
+                <div style="height:25px; background-color:green; width:<?=number_format($d->qt*100/$d->total,0,false,false)?>%"></div>
+            </td>
+        </tr>
+        <?php
+            }
+
+        ?>
+        </table>
+    </div>
+    <div class="col-md-6">
+
+    </div>
+</div>
+
+
 <script>
     $(function(){
 
