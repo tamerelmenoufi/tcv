@@ -55,7 +55,7 @@
             ?>
             <tr>
                 <td>
-                    <div><small><?=$d->company_name?></small></div>
+                    <div><small><?=$d->company_name?> (<?=$d->qt?>)</small></div>
                     <div style="height:25px; border-radius:5px; background-color:#eee; width:100%">
                         <div style="height:25px; padding:3px; border-radius:5px; margin-bottom:10px; background-color:green; width:<?=number_format($d->qt*100/$d->total,0,false,false)?>%; text-align:center; color:#fff; font-size:12px;"><?=number_format($d->qt*100/$d->total,0,false,false)?>%</div>
                     </div>
@@ -79,7 +79,7 @@
             ?>
             <tr>
                 <td>
-                    <div><small><?=$d->company_name?></small></div>
+                    <div><small><?=$d->company_name?> (<?=$d->qt?>)</small></div>
                     <div style="height:25px; border-radius:5px; background-color:#eee; width:100%">
                         <div style="height:25px; padding:3px; border-radius:5px; margin-bottom:10px; background-color:green; width:<?=number_format($d->qt*100/$d->total,0,false,false)?>%; text-align:center; color:#fff; font-size:12px;"><?=number_format($d->qt*100/$d->total,0,false,false)?>%</div>
                     </div>
