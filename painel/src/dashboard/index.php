@@ -55,7 +55,7 @@
             <tr>
                 <td>
                     <div><small><?=$d->company_name?></small></div>
-                    <div style="height:25px; border-radius:5px; background-color:#a1a1a1; width:100%">
+                    <div style="height:25px; border-radius:5px; background-color:#eee; width:100%">
                         <div style="height:25px; border-radius:5px; margin-bottom:10px; background-color:green; width:<?=number_format($d->qt*100/$d->total,0,false,false)?>%"></div>
                     </div>
                 </td>
