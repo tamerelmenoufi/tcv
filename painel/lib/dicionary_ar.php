@@ -73,6 +73,7 @@
         'Responsible Phone' => 'هاتف مسؤول',
         'Training Description' => 'وصف التدريب',
         'No registered training' => 'لا يوجد تدريب مسجل',
+        'Registered Training' => 'تدريب مسجل',
         'Registered' => 'مسجل',
         'No registered interns' => 'لا يوجد متدربين مسجلين',
         'Cycle' => 'دورة',

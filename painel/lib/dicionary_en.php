@@ -73,6 +73,7 @@
         'Responsible Phone' => 'Responsible Phone',
         'Training Description' => 'Training Description',
         'No registered training' => 'No registered training',
+        'Registered Training' => 'Registered Training',
         'Registered' => 'Registered',
         'No registered interns' => 'No registered interns',
         'Cycle' => 'Cycle',
