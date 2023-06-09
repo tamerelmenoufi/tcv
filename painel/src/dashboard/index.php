@@ -54,7 +54,7 @@
         <tr>
             <td><?=$d->company_name?></td>
             <td>
-                <div style="height:25px; background-color:green; width:<?=number_format($d->qt*100/$d->total,0,false,false)?>%"></div>
+                <div style="height:25px; background-color:green; width:<?=number_format($d->qt*100/$d->total,0,false,false)?>%">a</div>
             </td>
         </tr>
         <?php
