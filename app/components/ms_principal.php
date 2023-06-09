@@ -260,7 +260,7 @@
                     <?php
                     }else{
                     ?>
-                    <i class="fa-regular fa-image" style="font-size:40px; color:#eee;"></i>
+                    <i class="fa-regular fa-image" style="font-size:50px; color:#eee;"></i>
                     <?php
                     }
                     ?>
