@@ -86,6 +86,7 @@
         'LE' => 'ج.',
         'Search' => 'بحث',
         'Trainee Registration' => 'تسجيل المتدرب',
+        'Trainees' => 'المتدربين',
         'Adress' => 'العنوان',
         'Birthday' => 'تاريخ الميلاد',
         'Masculine' => 'ذكر',

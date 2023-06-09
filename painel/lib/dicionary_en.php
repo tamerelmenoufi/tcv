@@ -86,6 +86,7 @@
         'LE' => 'LE',
         'Search' => 'Search',
         'Trainee Registration' => 'Trainee Registration',
+        'Trainees' => 'Trainees',
         'Adress' => 'Adress',
         'Birthday' => 'Birthday',
         'Masculine' => 'Masculine',
