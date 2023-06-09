@@ -52,8 +52,8 @@
             while($d = mysqli_fetch_object($result)){
         ?>
         <tr>
-            <td style="width:auto;"><?=$d->company_name?></td>
             <td>
+                <div><?=$d->company_name?></div>
                 <div style="height:25px; background-color:green; width:<?=number_format($d->qt*100/$d->total,0,false,false)?>%"></div>
             </td>
         </tr>
