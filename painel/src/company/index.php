@@ -71,7 +71,7 @@
                           <?=$Dic['Options']?>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                          <li><button class="dropdown-item" type="button" target="information.php" identification="<?=$d->id?>"><?=$Dic['Information']?></button></li>
+                          <!-- <li><button class="dropdown-item" type="button" target="information.php" identification="<?=$d->id?>"><?=$Dic['Information']?></button></li> -->
                           <li><button class="dropdown-item" type="button" target="cycle.php" identification="<?=$d->id?>"><?=$Dic['Cycles']?></button></li>
                           <li><button class="dropdown-item" type="button" target="training.php" identification="<?=$d->id?>"><?=$Dic['Training']?></button></li>
                           <li><button class="dropdown-item" type="button" target="financial.php" identification="<?=$d->id?>"><?=$Dic['Financial']?></button></li>

@@ -143,7 +143,7 @@
         'Exit' => 'Exit',
         'Trained Opportunity' => 'Trained Opportunity',
         'Date' => 'Date',
-        '' => '',
+        'Back' => 'Back',
         '' => '',
         '' => '',
         '' => '',
