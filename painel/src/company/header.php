@@ -8,7 +8,7 @@
 
 ?>
 <div class="row g-0">
-    <div class="col-md-12 text-end">
+    <div class="col-md-12 text-end pb-3">
         <button class="btn btn-light retorno"><i class="fa-solid fa-angles-left"></i> <?=$Dic['Back']?></button>
     </div>
 </div>
