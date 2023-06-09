@@ -190,7 +190,17 @@
                     </div>
                 </div>
                 <div class="col-6 d-flex justify-content-center flex-column align-items-center">
+                    <?php
+                    if(is_file("../../painel/src/volume/{$d->id}/{$d->logo}")){
+                    ?>
                     <img src="<?=$localPainel?>src/volume/<?=$d->id?>/<?=$d->logo?>" style="height:40px;" />
+                    <?php
+                    }else{
+                    ?>
+                    <i class="fa-regular fa-image" style="font-size:40px; color:#eee;"></i>
+                    <?php
+                    }
+                    ?>
                     <h6 style="text-align:center; color:#075595;"><?=$d->name?></h6>
                 </div>
                 <div class="col-3 d-flex flex-column justify-content-center align-items-center" style="color:#fff; background-color:#00a8ec; height:100%; background-image:url(img/banner_bg_company.png); background-size:contain; background-repeat:no-repeat;">
