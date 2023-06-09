@@ -63,7 +63,17 @@
     </div>
     <div class="row g-0">
         <div class="col-2">
-        <img src="img/<?=$i?>.png" class="img-fluid rounded-start w-100">
+        <?php
+        if(is_file("../../painel/src/volume/{$d->id}/{$d->logo}")){
+        ?>
+        <img src="<?=$localPainel?>src/volume/<?=$d->id?>/<?=$d->logo?>" class="img-fluid rounded-start w-100" />
+        <?php
+        }else{
+        ?>
+        <i class="fa-regular fa-image" style="font-size:50px; color:#eee;"></i>
+        <?php
+        }
+        ?>
         </div>
         <div class="col-10">
         <div class="card-body">
