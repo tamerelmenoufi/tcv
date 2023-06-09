@@ -190,7 +190,7 @@
                     </div>
                 </div>
                 <div class="col-6 d-flex justify-content-center flex-column align-items-center">
-                    <img src="img/<?=$i?>.png" style="height:40px;" />
+                    <img src="<?=$localPainel?>src/volume/<?=$d->id?>/<?=$d->logo?>" style="height:40px;" />
                     <h6 style="text-align:center; color:#075595;"><?=$d->name?></h6>
                 </div>
                 <div class="col-3 d-flex flex-column justify-content-center align-items-center" style="color:#fff; background-color:#00a8ec; height:100%; background-image:url(img/banner_bg_company.png); background-size:contain; background-repeat:no-repeat;">
