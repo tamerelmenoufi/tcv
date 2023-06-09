@@ -79,8 +79,8 @@
                 </div>
 
                 <div class="form-floating mb-3">
-                    <textarea class="form-control" id="training_description" name="training_description" placeholder="<?=$Dic['Training Description']?>" style="height:250px;"><?=$d->training_description?></textarea>
-                    <label for="training_description" style="background-color:#fff; height:40px; width:100%; margin-top:5px; opacity:1; color:a1a1a1; border:solid 1px red;"><?=$Dic['Training Description']?>*</label>
+                    <textarea class="form-control" id="training_description" name="training_description" placeholder="<?=$Dic['Training Description']?>" style="height:250px; padding-top:30px;"><?=$d->training_description?></textarea>
+                    <label for="training_description" style="background-color:#fff; height:40px; left:0; margin-top:8px; right:-75px; padding-bottom:30px; margin-top:5px; opacity:1; color:a1a1a1;"><?=$Dic['Training Description']?>*</label>
                 </div>
 
                 <div class="input-group mb-3">
