@@ -30,8 +30,8 @@
     </div>
     <div class="col-md-3">
         <div class="alert alert-warning text-center m-2" role="alert">
-            <small><?=$Dic['Trainne']?></small>
-            <h1><?=$d->trainne?></h1>
+            <small><?=$Dic['Trainee']?></small>
+            <h1><?=$d->trainee?></h1>
         </div>
     </div>
     <div class="col-md-3">
