@@ -45,7 +45,7 @@
 
 <div class="row g-0">
     <div class="col-md-6">
-        <div class="p-3">
+        <div class="card p-3">
             <table>
             <?php
                 $query = "select count(*) as qt, b.name as company_name, (select count(*) from company_training) as total from company_training a left join company b on a.company = b.id group by a.company order by qt desc";
