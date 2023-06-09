@@ -7,10 +7,10 @@
         $d = mysqli_fetch_object($result);
 
 ?>
-<div class="card mb-3 retorno">
+<div class="card mb-3">
     <div class="row g-0">
         <div class="col-md-12">
-            <button class="btn btn-light"><?=$Dic['Back']?></button>
+            <button class="btn btn-light retorno"><i class="fa-solid fa-angles-left"></i> <?=$Dic['Back']?></button>
         </div>
     </div>
     <div class="row g-0">
