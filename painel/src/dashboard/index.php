@@ -44,7 +44,7 @@
 
 
 <div class="row g-0">
-    <div class="col-md-6">
+    <div class="col-md-6 p-3">
         <div class="card p-3">
             <table>
             <?php
