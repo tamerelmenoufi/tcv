@@ -79,7 +79,7 @@
                 </div>
 
                 <div class="form-floating mb-3">
-                    <textarea class="form-control" id="training_description" name="training_description" placeholder="<?=$Dic['Training Description']?>"><?=$d->training_description?></textarea>
+                    <textarea class="form-control" id="training_description" name="training_description" placeholder="<?=$Dic['Training Description']?>" style="height:250px;"><?=$d->training_description?></textarea>
                     <label for="training_description"><?=$Dic['Training Description']?>*</label>
                 </div>
 
