@@ -80,7 +80,7 @@
 
                 <div class="form-floating mb-3">
                     <textarea class="form-control" id="training_description" name="training_description" placeholder="<?=$Dic['Training Description']?>" style="height:250px; padding-top:40px;"><?=$d->training_description?></textarea>
-                    <label for="training_description" style="background-color:#fff; left:0; right:-74px; padding-bottom:30px; margin-top:8px; opacity:1; color:#a1a1a1;"><?=$Dic['Training Description']?>*</label>
+                    <label for="training_description" style="background-color:#fff; left:0; right:-74px; height:40px; padding-bottom:30px; margin-top:8px; opacity:1; color:#a1a1a1;"><?=$Dic['Training Description']?>*</label>
                 </div>
 
                 <div class="input-group mb-3">
