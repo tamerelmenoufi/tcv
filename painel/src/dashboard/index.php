@@ -3,6 +3,34 @@
 
 ?>
 
+
+<div class="row g-0">
+    <div class="col-md-3">
+        <div class="alert alert-success text-center" role="alert">
+            <small>Empresas</small>
+            <h1>123</h1>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="alert alert-danger text-center" role="alert">
+            <small>Empresas</small>
+            <h1>123</h1>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="alert alert-warning text-center" role="alert">
+            <small>Empresas</small>
+            <h1>123</h1>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="alert alert-info text-center" role="alert">
+            <small>Empresas</small>
+            <h1>123</h1>
+        </div>
+    </div>
+</div>
+
 <p>
     Aqui entra o texto e as apresentações do sistema
 </p>
