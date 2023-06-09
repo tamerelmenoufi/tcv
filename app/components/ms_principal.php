@@ -193,7 +193,7 @@
                     <?php
                     if(is_file("../../painel/src/volume/{$d->id}/{$d->logo}")){
                     ?>
-                    <img src="<?=$localPainel?>src/volume/<?=$d->id?>/<?=$d->logo?>" style="height:40px;" />
+                    <img src="<?=$localPainel?>src/volume/<?=$d->id?>/<?=$d->logo?>" style="height:50px;" />
                     <?php
                     }else{
                     ?>
