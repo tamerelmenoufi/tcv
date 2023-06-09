@@ -45,7 +45,7 @@
 
 <div class="row g-0">
     <div class="col-md-6">
-        <div class="p-2">
+        <div class="p-3">
             <table>
             <?php
                 $query = "select count(*) as qt, b.name as company_name, (select count(*) from company_training) as total from company_training a left join company b on a.company = b.id group by a.company order by qt desc";
@@ -55,7 +55,7 @@
             <tr>
                 <td>
                     <div><?=$d->company_name?></div>
-                    <div style="height:25px; background-color:green; width:<?=number_format($d->qt*100/$d->total,0,false,false)?>%"></div>
+                    <div style="height:25px; margin-bottom:10px; background-color:green; width:<?=number_format($d->qt*100/$d->total,0,false,false)?>%"></div>
                 </td>
             </tr>
             <?php
