@@ -68,8 +68,29 @@
             </table>
         </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 p-2">
+        <div class="card p-3">
+            <h3><?=$Dic['Registered Trainee']?></h3>
+            <table>
+            <?php
+                $query = "select count(*) as qt, b.name as company_name, (select count(*) from treinee_admission) as total from treinee_admission a left join company b on a.company = b.id group by a.company order by qt desc";
+                $result = mysqli_query($con, $query);
+                while($d = mysqli_fetch_object($result)){
+            ?>
+            <tr>
+                <td>
+                    <div><small><?=$d->company_name?></small></div>
+                    <div style="height:25px; border-radius:5px; background-color:#eee; width:100%">
+                        <div style="height:25px; padding:3px; border-radius:5px; margin-bottom:10px; background-color:green; width:<?=number_format($d->qt*100/$d->total,0,false,false)?>%; text-align:center; color:#fff; font-size:12px;"><?=number_format($d->qt*100/$d->total,0,false,false)?>%</div>
+                    </div>
+                </td>
+            </tr>
+            <?php
+                }
 
+            ?>
+            </table>
+        </div>
     </div>
 </div>
 
