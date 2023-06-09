@@ -45,7 +45,7 @@
 
 <div class="row g-0">
     <div class="col-md-6">
-        <table style="border:0; padding:0; margin:0; width:100%;" border="1">
+        <table style="border:1px; padding:0; margin:0; width:100%;" border="1">
         <?php
             $query = "select count(*) as qt, b.name as company_name, (select count(*) from company_training) as total from company_training a left join company b on a.company = b.id group by a.company order by qt desc";
             $result = mysqli_query($con, $query);
