@@ -42,7 +42,7 @@
     <div class="row mb-1 menu-cinza">
       <div class="col">
         <a url="src/categories/index.php" class="text-decoration-none texto-cinza" data-bs-dismiss="offcanvas" aria-label="Close">
-          <i class="fa-regular fa-building"></i> <?=$Dic['Categories']?>
+          <i class="fa-solid fa-sitemap"></i> <?=$Dic['Categories']?>
         </a>
       </div>
     </div>
@@ -58,7 +58,7 @@
     <div class="row mb-1 menu-cinza">
       <div class="col">
         <a url="src/faculties/index.php" class="text-decoration-none texto-cinza" data-bs-dismiss="offcanvas" aria-label="Close">
-          <i class="fa-regular fa-building"></i> <?=$Dic['Faculties']?>
+          <i class="fa-solid fa-school"></i> <?=$Dic['Faculties']?>
         </a>
       </div>
     </div>
@@ -66,7 +66,7 @@
     <div class="row mb-1 menu-cinza">
       <div class="col">
         <a url="src/states/index.php" class="text-decoration-none texto-cinza" data-bs-dismiss="offcanvas" aria-label="Close">
-          <i class="fa-regular fa-building"></i> <?=$Dic['States']?>
+          <i class="fa-solid fa-mountain-city"></i> <?=$Dic['States']?>
         </a>
       </div>
     </div>
