@@ -7,7 +7,7 @@
         $d = mysqli_fetch_object($result);
 
 ?>
-<div style="position:fixed; top:70px; width:calc(100% - 40px);">
+<div style="position:absolute; top:70px; width:calc(100% - 40px);">
     <div class="row g-0">
         <div class="col-md-12 text-end pb-3">
             <button class="btn btn-light retorno"><i class="fa-solid fa-angles-left"></i> <?=$Dic['Back']?></button>
