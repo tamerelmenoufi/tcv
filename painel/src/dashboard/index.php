@@ -45,23 +45,25 @@
 
 <div class="row g-0">
     <div class="col-md-6">
-        <table style="border:1px; padding:10px; margin:0; width:100%;">
-        <?php
-            $query = "select count(*) as qt, b.name as company_name, (select count(*) from company_training) as total from company_training a left join company b on a.company = b.id group by a.company order by qt desc";
-            $result = mysqli_query($con, $query);
-            while($d = mysqli_fetch_object($result)){
-        ?>
-        <tr>
-            <td>
-                <div><?=$d->company_name?></div>
-                <div style="height:25px; background-color:green; width:<?=number_format($d->qt*100/$d->total,0,false,false)?>%"></div>
-            </td>
-        </tr>
-        <?php
-            }
+        <div class="p-2">
+            <table>
+            <?php
+                $query = "select count(*) as qt, b.name as company_name, (select count(*) from company_training) as total from company_training a left join company b on a.company = b.id group by a.company order by qt desc";
+                $result = mysqli_query($con, $query);
+                while($d = mysqli_fetch_object($result)){
+            ?>
+            <tr>
+                <td>
+                    <div><?=$d->company_name?></div>
+                    <div style="height:25px; background-color:green; width:<?=number_format($d->qt*100/$d->total,0,false,false)?>%"></div>
+                </td>
+            </tr>
+            <?php
+                }
 
-        ?>
-        </table>
+            ?>
+            </table>
+        </div>
     </div>
     <div class="col-md-6">
 
