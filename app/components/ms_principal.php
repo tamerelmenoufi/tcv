@@ -170,7 +170,7 @@
         <div class="BannersCompany" style="margin-top:-15px;">
             <?php
                 // for($i=0;$i<10;$i++){
-                    $query = "select * from company order by rand() limit 22";
+                    $query = "select * from company /*order by rand()*/ limit 22";
                     $result = mysqli_query($con, $query);
                     $i=0;
                     while($d = mysqli_fetch_object($result)){
