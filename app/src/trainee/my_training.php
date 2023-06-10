@@ -54,7 +54,7 @@
         </div>
     </div>
     <div class="row g-0">
-        <div class="col-2">
+        <div class="col-2 text-center">
         <?php
         if(is_file("../../painel/src/volume/{$d->id}/{$d->logo}")){
         ?>
