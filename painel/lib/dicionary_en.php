@@ -148,7 +148,7 @@
         'Date' => 'Date',
         'Back' => 'Back',
         'Admission' => 'Admission',
-        '' => '',
+        'Cancel' => 'Cancel',
         '' => '',
         '' => '',
         '' => '',

@@ -84,35 +84,23 @@
                             <i class="fa-solid fa-face-flushed"></i>
                             <?=$Dic[$d->status]?>
                         </span>
+                        <?php
+                        if($d->status == 'registred'){
+                        ?>
+                        <span class="text-bg-danger rounded p-1">
+                            <i class="fa-solid fa-cancel"></i>
+                            <?=$Dic['Cancel']?>
+                        </span>
+                        <?php
+                        }
+                        ?>
                     </div>
                 </small>
             </div>
-
-            <!-- <p class="card-text">
-                <button class="btn btn-danger d-flex justify-content-between w-100" style="font-size:12px;">
-                    <i class="fa-solid fa-sack-dollar"></i>
-                    <span><?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?></span>
-                    <span><i class="fa-solid fa-user-xmark"></i></span>
-                </button>
-            </p> -->
         </div>
         </div>
     </div>
-    <!-- <div class="row g-0">
-        <div class="col">
-            <p class="d-flex justify-content-between card-text p-2" style="color:#a1a1a1; font-size:12px;">
-                <small class="text-body-secondary"><i class="fa fa-calendar"></i> <?=dataBr($d->initial_date)?> - <?=dataBr($d->final_date)?></small>
-                <span><i class="fa fa-users"></i> 122 Vagas</span>
-            </p>
-        </div>
-    </div> -->
     <div class="card-body">
-        <!-- <p class="card-text" style="text-align:right">
-            <span class="text-bg-warning rounded p-1">
-                <i class="fa-solid fa-face-flushed"></i>
-                <?=$Dic[$d->status]?>
-            </span>
-        </p> -->
         <p class="card-text p-2" style="text-align:justify"><?=$d->training_description?></p>
     </div>
 </div>
