@@ -291,6 +291,14 @@
                                 </span>
                                 <?php
                                 }
+                                if($d->status == 'registred'){
+                                ?>
+                                <span class="text-bg-danger rounded p-1" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px;">
+                                    <i class="fa-solid fa-trash"></i>
+                                    <?=$Dic['Cancel']?>
+                                </span>
+                                <?php
+                                }
                                 ?>
                             </div>
 
