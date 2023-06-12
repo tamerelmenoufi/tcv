@@ -295,7 +295,7 @@
                                 ?>
                                 <span class="text-bg-danger rounded p-1" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px;">
                                     <i class="fa-solid fa-trash"></i>
-                                    <?=$Dic['Cancel']?>
+                                    <?=$Dic['Cancel']?> Dados teste
                                 </span>
                                 <?php
                                 }
