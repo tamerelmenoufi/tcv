@@ -125,7 +125,7 @@
         </div>
 
 
-        <p class="card-text p-2" style="text-align:justify"><?=$d->training_description?></p>
+        <!-- <p class="card-text p-2" style="text-align:justify"><?=$d->training_description?></p>
             <?php
                 if($d->sign_up){
                 ?>
@@ -145,7 +145,7 @@
                 <?php
                 }
                 ?>
-        </p>
+        </p> -->
     </div>
 </div>
 
