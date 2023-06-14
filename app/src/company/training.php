@@ -92,11 +92,6 @@
                         <i class="fa fa-calendar"></i> <?=$Dic['Date']?>: <?=dataBr($d->initial_date)?> - <?=dataBr($d->final_date)?><br>
                         <i class="fa fa-users"></i> <?=$d->trainings?> <?=$Dic['Trained Opportunity']?>
                     </div>
-                    <div class="w-100 p-2" style="color:#054f8c; font-size:12px; text-align:<?=(($_SESSION['lng'] == 'ar')?'left':'right')?>;">
-                        <span class="bg-success p-1 text-dark bg-opacity-25 rounded">
-                            <i class="fa-solid fa-sack-dollar"></i> <?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?>
-                        </span>
-                    </div>
                 </small>
             </div>
         </div>
@@ -105,6 +100,9 @@
     <div class="card-body">
         <div class="row g-0">
             <div class="col">
+                <span class="bg-success p-1 text-dark bg-opacity-25 rounded">
+                    <i class="fa-solid fa-sack-dollar"></i> <?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?>
+                </span>
                 <?php
                 if($d->status){
                 ?>
