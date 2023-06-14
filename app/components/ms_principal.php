@@ -240,9 +240,10 @@
                     $i++;
             ?>
 
-            <div class="card card-background m-2 OpenTraining" id="<?=$d->id?>"
+            <div class="card card-background m-2" id="<?=$d->id?>"
                 <?=(($d->sign_upXX)?'style="background-color:rgb(100,253,79, 0.1);"':false)?>
             >
+            <div class="OpenTraining">
                 <div class="row g-0">
                     <div class="col">
                         <h6 class="card-title" style="color:#054f8c; padding:2px; margin:0;">
@@ -271,6 +272,7 @@
                     </div>
                     </div>
                 </div>
+            </div>
                 <div class="row g-0">
                     <div class="col">
 
