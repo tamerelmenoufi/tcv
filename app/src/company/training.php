@@ -96,24 +96,6 @@
                         <span class="bg-success p-1 text-dark bg-opacity-25 rounded">
                             <i class="fa-solid fa-sack-dollar"></i> <?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?>
                         </span>
-                        <?php
-                        if($d->status){
-                        ?>
-                        <span class="text-bg-warning rounded p-1" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px; background-color:<?=$color_status?>; color:#fff;">
-                            <i class="fa-solid fa-face-flushed"></i>
-                            <?=$Dic[$d->status]?>
-                        </span>
-                        <?php
-                        }
-                        if($d->status == 'registered'){
-                        ?>
-                        <span class="text-bg-danger rounded p-1" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px;">
-                            <i class="fa-solid fa-trash"></i>
-                            <?=$Dic['Cancel']?>
-                        </span>
-                        <?php
-                        }
-                        ?>
                     </div>
                 </small>
             </div>
@@ -121,9 +103,31 @@
         </div>
     </div>
     <div class="card-body">
-        <p class="card-text p-2" style="text-align:justify"><?=$d->training_description?></p>
+        <div class="row g-0">
+            <div class="col">
+                <?php
+                if($d->status){
+                ?>
+                <span class="text-bg-warning rounded p-1" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px; background-color:<?=$color_status?>; color:#fff;">
+                    <i class="fa-solid fa-face-flushed"></i>
+                    <?=$Dic[$d->status]?>
+                </span>
+                <?php
+                }
+                if($d->status == 'registered'){
+                ?>
+                <span class="text-bg-danger rounded p-1" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px;">
+                    <i class="fa-solid fa-trash"></i>
+                    <?=$Dic['Cancel']?>
+                </span>
+                <?php
+                }
+                ?>
+            </div>
+        </div>
 
-            <p class="card-text">
+
+        <p class="card-text p-2" style="text-align:justify"><?=$d->training_description?></p>
             <?php
                 if($d->sign_up){
                 ?>
@@ -143,8 +147,7 @@
                 <?php
                 }
                 ?>
-            </p>
-
+        </p>
     </div>
 </div>
 
