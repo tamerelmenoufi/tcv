@@ -258,10 +258,10 @@
                     }
             ?>
 
-            <div class="card card-background m-2" id="<?=$d->id?>"
+            <div class="card card-background m-2"
                 <?=(($color_status)?"style=\"border:solid 2px {$color_status};\"":false)?>
             >
-                <div class="OpenTraining">
+                <div class="OpenTraining" id="<?=$d->id?>">
                     <div class="row g-0">
                         <div class="col">
                             <h6 class="card-title" style="color:#054f8c; padding:2px; margin:0;">
