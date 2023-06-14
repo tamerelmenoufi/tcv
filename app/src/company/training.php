@@ -204,8 +204,9 @@
                                             Carregando('none');
                                             $.alert({
                                                 content:'<?=$Dic['Confirmed enrollment!']?>',
+                                                title:false,
                                                 buttons:{
-                                                    'ok':function(){
+                                                    '<?=$Dic['ok']?>':function(){
 
                                                     }
                                                 }
