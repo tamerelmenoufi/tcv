@@ -259,7 +259,7 @@
             ?>
 
             <div class="card card-background m-2" id="<?=$d->id?>"
-                <?=(($color_status)?"style=\"border:solid 4px {$color_status};\"":false)?>
+                <?=(($color_status)?"style=\"border:solid 2px {$color_status};\"":false)?>
             >
                 <div class="OpenTraining">
                     <div class="row g-0">
