@@ -115,7 +115,7 @@
                 }else{
                 ?>
                 <span class="text-bg-primary rounded p-1 sign_up" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px;">
-                    <i class="fa-solid fa-user-plus"></i> <?=$Dic['Sign up']?>
+                    <i class="fa-solid fa-user-plus"></i> <?=$Dic['sign up']?>
                 </span>
                 <?php
                 }
