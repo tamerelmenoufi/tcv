@@ -149,7 +149,7 @@
         'Back' => 'Back',
         'Admission' => 'Admission',
         'Cancel' => 'Cancel',
-        '' => '',
+        'Confirm your subscription?' => 'Confirm your subscription?',
         '' => '',
         '' => '',
 

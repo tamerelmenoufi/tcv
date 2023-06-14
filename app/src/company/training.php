@@ -115,7 +115,7 @@
                 }else{
                 ?>
                 <span class="text-bg-primary rounded p-1 sign_up" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px;">
-                    Inscrição
+                    <i class="fa-solid fa-user-plus"></i> <?=$Dic['Sign up']?>
                 </span>
                 <?php
                 }
@@ -176,32 +176,47 @@
                 return;
             }else{
 
-                Carregando();
-                $.ajax({
-                    url:`src/company/training.php`,
-                    type:"POST",
-                    data:{
-                        action:'sign_up',
-                        id:'<?=$d->id?>'
-                    },
-                    success:function(dados){
-                        $.ajax({
-                            url:`components/ms_popup_100.php`,
-                            type:"POST",
-                            data:{
-                                local:`src/company/training.php`,
-                                id:'<?=$d->id?>'
-                            },
-                            success:function(dados){
-                                PageClose();
-                                $(".ms_corpo").append(dados);
-                                Carregando('none');
-                                $.alert('Inscrição realizada!');
-                            }
-                        });
+                $.confirm({
+                    conetent:'<?=$Dic['Confirm your subscription?']?>',
+                    title:false,
+                    buttons:{
+                        '<?=$Dic['Yes']?>':function(){
 
+                            Carregando();
+                            $.ajax({
+                                url:`src/company/training.php`,
+                                type:"POST",
+                                data:{
+                                    action:'sign_up',
+                                    id:'<?=$d->id?>'
+                                },
+                                success:function(dados){
+                                    $.ajax({
+                                        url:`components/ms_popup_100.php`,
+                                        type:"POST",
+                                        data:{
+                                            local:`src/company/training.php`,
+                                            id:'<?=$d->id?>'
+                                        },
+                                        success:function(dados){
+                                            PageClose();
+                                            $(".ms_corpo").append(dados);
+                                            Carregando('none');
+                                            $.alert('Inscrição realizada!');
+                                        }
+                                    });
+
+                                }
+                            });
+
+                        },
+                        '<?=$Dic['No']?>':function(){
+
+                        }
                     }
                 });
+
+
 
             }
 
