@@ -143,6 +143,11 @@
         $("span.del").off('click').on('click',function(){
             id = $(this).attr('codId');
 
+            $.confirm({
+                title:false,
+                content:'<?=$Dic['']?>'
+            });
+            return;
             $.ajax({
                 url:`components/ms_popup_100.php`,
                 type:"POST",
