@@ -28,6 +28,24 @@
     $i=0;
     while($d = mysqli_fetch_object($result)){
         $i++;
+        switch($d->status){
+            case 'registered':{
+                $color_status = '#054f8b';
+                break;
+            }
+            case 'approved':{
+                $color_status = '#85b344';
+                break;
+            }
+            case 'denied':{
+                $color_status = '#ee1d23';
+                break;
+            }
+            default:{
+                $color_status = false;
+                break;
+            }
+        }
 ?>
 <style>
     .card-body {
@@ -36,19 +54,12 @@
         font-size:11px;
     }
 </style>
-<div class="card m-2 card-background OpenTraining" style="background">
+<div class="card m-2" <?=(($color_status)?"style=\"border:solid 2px {$color_status};\"":false)?>>
     <div class="row g-0">
         <div class="col">
-            <!-- <div class="card-body">
-                <h6 class="card-title p-2">
-                    <?=$d->training_name?><br>
-                    <small style="color:#a1a1a1"><?=$d->company_name?></small>
-                </h6>
-            </div> -->
             <div class="card-body">
                 <h6 class="card-title" style="color:#054f8c; padding:2px; margin:0;">
                     <?=$d->training_name?>
-                    <!-- <br><small style="color:#a1a1a1"><?=$d->company_name?></small> -->
                 </h6>
             </div>
         </div>
@@ -76,31 +87,38 @@
                         <i class="fa fa-calendar"></i> <?=$Dic['Date']?>: <?=dataBr($d->initial_date)?> - <?=dataBr($d->final_date)?><br>
                         <i class="fa fa-users"></i> <?=$d->trainings?> <?=$Dic['Trained Opportunity']?>
                     </div>
-                    <div class="w-100" style="text-align:<?=(($_SESSION['lng'] == 'ar')?'left':'right')?>; padding-<?=(($_SESSION['lng'] == 'ar')?'left':'right')?>:5px; margin-top:5px;">
-                        <span class="bg-success p-1 text-dark bg-opacity-25 rounded" style="margin-<?=(($_SESSION['lng'] == 'ar')?'left':'right')?>:5px;">
-                            <i class="fa-solid fa-sack-dollar"></i> <?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?>
-                        </span>
-                        <span class="text-bg-warning rounded p-1">
-                            <i class="fa-solid fa-face-flushed"></i>
-                            <?=$Dic[$d->status]?>
-                        </span>
-                        <?php
-                        if($d->status == 'registred'){
-                        ?>
-                        <span class="text-bg-danger rounded p-1">
-                            <i class="fa-solid fa-cancel"></i>
-                            <?=$Dic['Cancel']?>
-                        </span>
-                        <?php
-                        }
-                        ?>
-                    </div>
                 </small>
             </div>
         </div>
         </div>
     </div>
+
     <div class="card-body">
+    <div class="row g-0">
+            <div class="col">
+                <span class="bg-success p-1 text-dark bg-opacity-25 rounded" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px;">
+                    <i class="fa-solid fa-sack-dollar"></i> <?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?>
+                </span>
+                <?php
+                if($d->status){
+                ?>
+                <span class="rounded p-1" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px; background-color:<?=$color_status?>; color:#fff;">
+                    <i class="fa-solid fa-face-flushed"></i>
+                    <?=$Dic[$d->status]?>
+                </span>
+                <?php
+                }
+                if($d->status == 'registered'){
+                ?>
+                <span class="text-bg-danger rounded p-1" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px;">
+                    <i class="fa-solid fa-trash"></i>
+                    <?=$Dic['Cancel']?>
+                </span>
+                <?php
+                }
+                ?>
+            </div>
+        </div>
         <p class="card-text p-2" style="text-align:justify"><?=$d->training_description?></p>
     </div>
 </div>
