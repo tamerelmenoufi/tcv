@@ -238,10 +238,28 @@
                     $i=0;
                     while($d = mysqli_fetch_object($result)){
                     $i++;
+                    switch($d->status){
+                        case 'registered':{
+                            $color_status = '#054f8b';
+                            break;
+                        }
+                        case 'approved':{
+                            $color_status = '#85b344';
+                            break;
+                        }
+                        case 'denied':{
+                            $color_status = '#ee1d23';
+                            break;
+                        }
+                        default:{
+                            $color_status = false;
+                            break;
+                        }
+                    }
             ?>
 
             <div class="card card-background m-2" id="<?=$d->id?>"
-                <?=(($d->sign_upXX)?'style="background-color:rgb(100,253,79, 0.1);"':false)?>
+                <?=(($color_status)?"style=\"border-color:{$color_status};\"":false)?>
             >
                 <div class="OpenTraining">
                     <div class="row g-0">
@@ -290,7 +308,7 @@
                             <?php
                             if($d->status){
                             ?>
-                            <span class="text-bg-warning rounded p-1" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px;">
+                            <span class="rounded p-1" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px; background-color:<?=$color_status?>;">
                                 <i class="fa-solid fa-face-flushed"></i>
                                 <?=$Dic[$d->status]?>
                             </span>
