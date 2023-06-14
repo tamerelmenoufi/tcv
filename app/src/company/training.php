@@ -114,7 +114,7 @@
                 <?php
                 }else{
                 ?>
-                <span class="text-bg-primary sign_up" style="font-size:12px;">
+                <span class="text-bg-primary rounded p-1 sign_up" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px;">
                     Inscrição
                 </span>
                 <?php
