@@ -18,6 +18,25 @@
         $d = mysqli_fetch_object($result);
         $i++;
 
+        switch($d->status){
+            case 'registered':{
+                $color_status = '#054f8b';
+                break;
+            }
+            case 'approved':{
+                $color_status = '#85b344';
+                break;
+            }
+            case 'denied':{
+                $color_status = '#ee1d23';
+                break;
+            }
+            default:{
+                $color_status = false;
+                break;
+            }
+        }
+
 
         if($_POST['action'] == 'sign_up'){
             $q = "insert into treinee_admission set
@@ -49,18 +68,7 @@
 <div style="position:fixed; z-index:10; left:0; top:0; height:60px; background:#d8f2fe; width:100%; padding:10px; padding-top:15px;">
     <h4 class="Titulo<?=$md5?>"><?=$Dic['Training details']?></h4>
 </div>
-<div class="card m-2 card-background OpenTraining" style="background">
-    <div class="row g-0">
-        <div class="col">
-            <!-- <div class="card-body"> -->
-                <h6 class="card-title" style="color:#054f8c; padding:2px; margin:0;">
-                    <?=$d->training_name?>
-                    <!-- <br><small style="color:#a1a1a1"><?=$d->company_name?></small> -->
-                </h6>
-            <!-- </div> -->
-
-        </div>
-    </div>
+<div class="card m-2" <?=(($color_status)?"style=\"border:solid 2px {$color_status};\"":false)?>>
     <div class="row g-0">
         <div class="col-2 text-center">
         <?php
@@ -84,12 +92,6 @@
                         <i class="fa fa-calendar"></i> <?=$Dic['Date']?>: <?=dataBr($d->initial_date)?> - <?=dataBr($d->final_date)?><br>
                         <i class="fa fa-users"></i> <?=$d->trainings?> <?=$Dic['Trained Opportunity']?>
                     </div>
-                    <!-- <div class="w-100" style="text-align:<?=(($_SESSION['lng'] == 'ar')?'left':'right')?>; padding-<?=(($_SESSION['lng'] == 'ar')?'left':'right')?>:5px; margin-top:5px;">
-                        <span class="bg-success p-1 text-dark bg-opacity-25 rounded">
-                            <i class="fa-solid fa-sack-dollar"></i> <?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?>
-                        </span>
-                    </div> -->
-
                     <div class="w-100 p-2" style="color:#054f8c; font-size:12px; text-align:<?=(($_SESSION['lng'] == 'ar')?'left':'right')?>;">
                         <span class="bg-success p-1 text-dark bg-opacity-25 rounded">
                             <i class="fa-solid fa-sack-dollar"></i> <?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?>
@@ -97,7 +99,7 @@
                         <?php
                         if($d->status){
                         ?>
-                        <span class="text-bg-warning rounded p-1" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px;">
+                        <span class="text-bg-warning rounded p-1" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px; background-color:<?=$color_status?>; color:#fff;">
                             <i class="fa-solid fa-face-flushed"></i>
                             <?=$Dic[$d->status]?>
                         </span>
@@ -107,37 +109,7 @@
                     </div>
                 </small>
             </div>
-            <!-- <p class="card-text">
-                <?php
-                if($d->sign_up){
-                ?>
-                <button class="btn btn-success d-flex justify-content-between w-100" style="font-size:12px;">
-                    <i class="fa-solid fa-sack-dollar"></i>
-                    <span><?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?></span>
-                    <span><i class="fa-regular fa-thumbs-up"></i></span>
-                </button>
-                <?php
-                }else{
-                ?>
-                <button class="btn btn-primary d-flex justify-content-between w-100 sign_up" style="font-size:12px;">
-                    <i class="fa-solid fa-sack-dollar"></i>
-                    <span><?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?></span>
-                    <span><i class="fa-solid fa-right-to-bracket"></i></span>
-                </button>
-                <?php
-                }
-                ?>
-            </p> -->
         </div>
-        </div>
-    </div>
-    <div class="row g-0">
-        <div class="col">
-            <!-- <p class="d-flex justify-content-between card-text p-2" style="color:#a1a1a1; font-size:12px;">
-                <small class="text-body-secondary"><i class="fa fa-calendar"></i> <?=dataBr($d->initial_date)?> - <?=dataBr($d->final_date)?></small>
-                <span><i class="fa fa-users"></i> 122 Vagas</span>
-            </p> -->
-
         </div>
     </div>
     <div class="card-body">
