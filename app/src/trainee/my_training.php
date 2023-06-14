@@ -96,6 +96,7 @@
     <div class="card-body">
     <div class="row g-0">
             <div class="col">
+            <div class="w-100 p-2" style="color:#054f8c; font-size:12px; text-align:<?=(($_SESSION['lng'] == 'ar')?'left':'right')?>;">
                 <span class="bg-success p-1 text-dark bg-opacity-25 rounded" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px;">
                     <i class="fa-solid fa-sack-dollar"></i> <?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?>
                 </span>
@@ -117,6 +118,7 @@
                 <?php
                 }
                 ?>
+            </div>
             </div>
         </div>
         <p class="card-text p-2" style="text-align:justify"><?=$d->training_description?></p>
