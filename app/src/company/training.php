@@ -177,7 +177,7 @@
             }else{
 
                 $.confirm({
-                    conetent:'<?=$Dic['Confirm your subscription?']?>',
+                    content:'<?=$Dic['Confirm your subscription?']?>',
                     title:false,
                     buttons:{
                         '<?=$Dic['Yes']?>':function(){
