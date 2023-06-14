@@ -68,7 +68,7 @@
 <div style="position:fixed; z-index:10; left:0; top:0; height:60px; background:#d8f2fe; width:100%; padding:10px; padding-top:15px;">
     <h4 class="Titulo<?=$md5?>"><?=$Dic['Training details']?></h4>
 </div>
-<div class="card m-2" <?=(($color_status)?"style=\"border:solid 2px {$color_status};\"":false)?>>
+<div class="card m-2 pb-2" <?=(($color_status)?"style=\"border:solid 2px {$color_status};\"":false)?>>
     <div class="row g-0">
         <div class="col-2 text-center">
         <?php
