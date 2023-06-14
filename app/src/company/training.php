@@ -106,7 +106,7 @@
                 <?php
                 if($d->status){
                 ?>
-                <span class="text-bg-warning rounded p-1" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px; background-color:<?=$color_status?>; color:#fff;">
+                <span class="rounded p-1" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px; background-color:<?=$color_status?>; color:#fff;">
                     <i class="fa-solid fa-face-flushed"></i>
                     <?=$Dic[$d->status]?>
                 </span>
