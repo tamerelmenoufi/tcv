@@ -6,7 +6,7 @@
             array(
                 'numero' => $n, // Receivers phonei
                 'mensagem' => $m,
-                'ddi' => '+',
+                'cnf' => ['ddi' => '+'],
             )
             );
         $opts = array('http' =>

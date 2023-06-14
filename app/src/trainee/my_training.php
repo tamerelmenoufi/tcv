@@ -1,5 +1,13 @@
 <?php
     include("{$_SERVER['DOCUMENT_ROOT']}/painel/lib/includes.php");
+
+
+    if($_POST['action'] == 'delete'){
+        $query = "update treinee_admission set del = '1', justify_del = '{$_POST['justify']}' where id = '{$_POST['id']}'";
+        mysqli_query($con, $query);
+        // exit();
+    }
+
 ?>
 
 <style>
@@ -111,7 +119,7 @@
                 }
                 if($d->status == 'registered'){
                 ?>
-                <span class="text-bg-danger rounded p-1" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px;">
+                <span class="text-bg-danger rounded p-1 del" codId="<?=$d->id?>" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px;">
                     <i class="fa-solid fa-trash"></i>
                     <?=$Dic['Cancel']?>
                 </span>
@@ -127,3 +135,39 @@
 
 <?php
     }
+?>
+
+<script>
+    $(function(){
+
+        $("span.del").off('click').on('click',function(){
+            id = $(this).attr('codId');
+
+            $.ajax({
+                url:`components/ms_popup_100.php`,
+                type:"POST",
+                data:{
+                    local:`src/trainee/my_training.php`,
+                    id,
+                    action:'delete'
+                },
+                success:function(dados){
+                    PageClose();
+                    $(".ms_corpo").append(dados);
+                    Carregando('none');
+                    $.alert({
+                        content:'<?=$Dic['Confirmed enrollment!']?>',
+                        title:false,
+                        buttons:{
+                            '<?=$Dic['ok']?>':function(){
+
+                            }
+                        }
+                    });
+                }
+            });
+
+
+        })
+    })
+</script>
