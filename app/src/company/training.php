@@ -202,7 +202,14 @@
                                             PageClose();
                                             $(".ms_corpo").append(dados);
                                             Carregando('none');
-                                            $.alert('Inscrição realizada!');
+                                            $.alert({
+                                                content:'<?=$Dic['Confirmed enrollment!']?>',
+                                                buttons:{
+                                                    'ok':function(){
+
+                                                    }
+                                                }
+                                            });
                                         }
                                     });
 

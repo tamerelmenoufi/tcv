@@ -150,6 +150,6 @@
         'Admission' => 'قبول',
         'Cancel' => 'إلغاء الاشتراك',
         'Confirm your subscription?' => 'تأكيد اشتراكك؟',
-        '' => '',
+        'Confirmed enrollment!' => 'تم تأكيد التسجيل!',
         '' => '',
     ];
