@@ -243,79 +243,69 @@
             <div class="card card-background m-2" id="<?=$d->id?>"
                 <?=(($d->sign_upXX)?'style="background-color:rgb(100,253,79, 0.1);"':false)?>
             >
-            <div class="OpenTraining">
-                <div class="row g-0">
-                    <div class="col">
-                        <h6 class="card-title" style="color:#054f8c; padding:2px; margin:0;">
-                            <?=$d->training_name?>
-                            <!-- <small style="color:#a1a1a1"><?=$d->company_name?></small> -->
-                        </h6>
+                <div class="OpenTraining">
+                    <div class="row g-0">
+                        <div class="col">
+                            <h6 class="card-title" style="color:#054f8c; padding:2px; margin:0;">
+                                <?=$d->training_name?>
+                                <!-- <small style="color:#a1a1a1"><?=$d->company_name?></small> -->
+                            </h6>
+                        </div>
                     </div>
-                </div>
-                <div class="row g-0">
-                    <div class="col-2 text-center">
-                    <?php
-                    if(is_file("../../painel/src/volume/{$d->id}/{$d->logo}")){
-                    ?>
-                    <img src="<?=$localPainel?>src/volume/<?=$d->id?>/<?=$d->logo?>" class="img-fluid rounded-start w-100" />
-                    <?php
-                    }else{
-                    ?>
-                    <i class="fa-regular fa-image" style="font-size:50px; color:#eee;"></i>
-                    <?php
-                    }
-                    ?>
+                    <div class="row g-0">
+                        <div class="col-2 text-center">
+                        <?php
+                        if(is_file("../../painel/src/volume/{$d->id}/{$d->logo}")){
+                        ?>
+                        <img src="<?=$localPainel?>src/volume/<?=$d->id?>/<?=$d->logo?>" class="img-fluid rounded-start w-100" />
+                        <?php
+                        }else{
+                        ?>
+                        <i class="fa-regular fa-image" style="font-size:50px; color:#eee;"></i>
+                        <?php
+                        }
+                        ?>
+                        </div>
+                        <div class="col-10">
+                        <div class="card-body-limit4">
+                            <b><?=$d->company_name?></b><br><?=$d->training_description?>
+                        </div>
+                        </div>
                     </div>
-                    <div class="col-10">
-                    <div class="card-body-limit4">
-                        <b><?=$d->company_name?></b><br><?=$d->training_description?>
-                    </div>
-                    </div>
-                </div>
-            </div>
-                <div class="row g-0">
-                    <div class="col">
-
+                    <div class="row g-0">
+                        <div class="col">
                             <div class="text-body-secondary w-100 p-2" style="color:#054f8c; font-size:12px;">
                                 <i class="fa fa-calendar"></i> <?=$Dic['Date']?>: <?=dataBr($d->initial_date)?> - <?=dataBr($d->final_date)?><br>
                                 <i class="fa fa-users"></i> <?=$d->trainings?> <?=$Dic['Trained Opportunity']?>
                             </div>
-                            <div class="w-100 p-2" style="color:#054f8c; font-size:12px; text-align:<?=(($_SESSION['lng'] == 'ar')?'left':'right')?>;">
-                                <span class="bg-success p-1 text-dark bg-opacity-25 rounded">
-                                    <i class="fa-solid fa-sack-dollar"></i> <?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?>
-                                </span>
-                                <?php
-                                if($d->status){
-                                ?>
-                                <span class="text-bg-warning rounded p-1" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px;">
-                                    <i class="fa-solid fa-face-flushed"></i>
-                                    <?=$Dic[$d->status]?>
-                                </span>
-                                <?php
-                                }
-                                if($d->status == 'registered'){
-                                ?>
-                                <span class="text-bg-danger rounded p-1" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px;">
-                                    <i class="fa-solid fa-trash"></i>
-                                    <?=$Dic['Cancel']?>
-                                </span>
-                                <?php
-                                }
-                                ?>
-                            </div>
-
-                            <!-- <div class="w-100">
-                                <small class="text-body-secondary w-100">
-                                    <i class="fa fa-calendar"></i> <?=$Dic['Date']?>: <?=dataBr($d->initial_date)?> - <?=dataBr($d->final_date)?><br>
-                                    <i class="fa fa-users"></i> <?=$d->trainings?> <?=$Dic['Trained Opportunity']?>
-                                </small>
-                            </div>
-                            <div class="w-100" style="text-align:<?=(($_SESSION['lng'] == 'ar')?'left':'right')?>; padding-<?=(($_SESSION['lng'] == 'ar')?'left':'right')?>:5px; margin-top:5px;">
-                                <span class="bg-success p-1 text-dark bg-opacity-25 rounded">
-                                    <i class="fa-solid fa-sack-dollar"></i> <?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?>
-                                </span>
-                            </div> -->
-
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col">
+                        <div class="w-100 p-2" style="color:#054f8c; font-size:12px; text-align:<?=(($_SESSION['lng'] == 'ar')?'left':'right')?>;">
+                            <span class="bg-success p-1 text-dark bg-opacity-25 rounded">
+                                <i class="fa-solid fa-sack-dollar"></i> <?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?>
+                            </span>
+                            <?php
+                            if($d->status){
+                            ?>
+                            <span class="text-bg-warning rounded p-1" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px;">
+                                <i class="fa-solid fa-face-flushed"></i>
+                                <?=$Dic[$d->status]?>
+                            </span>
+                            <?php
+                            }
+                            if($d->status == 'registered'){
+                            ?>
+                            <span class="text-bg-danger rounded p-1" style="margin-<?=(($_SESSION['lng'] == 'ar')?'right':'left')?>:5px;">
+                                <i class="fa-solid fa-trash"></i>
+                                <?=$Dic['Cancel']?>
+                            </span>
+                            <?php
+                            }
+                            ?>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -324,9 +314,10 @@
                 }
             ?>
 
+        </div>
 
-    </div>
 </div>
+
 
 <div class="rodape"></div>
 
