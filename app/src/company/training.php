@@ -114,11 +114,9 @@
                 <?php
                 }else{
                 ?>
-                <button class="btn btn-primary d-flex justify-content-between w-100 sign_up" style="font-size:12px;">
-                    <i class="fa-solid fa-sack-dollar"></i>
-                    <span><?=$Dic['LE']?> <?=number_format($d->cost,2,'.',false)?> <?=$Dic['Cost']?></span>
-                    <span><i class="fa-solid fa-right-to-bracket"></i></span>
-                </button>
+                <span class="text-bg-primary sign_up" style="font-size:12px;">
+                    Inscrição
+                </span>
                 <?php
                 }
                 if($d->status == 'registered'){
